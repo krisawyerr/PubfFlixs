@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    font-size: x-large; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 1;
+    text-align: left;
+}
+
+.shows {
+    list-style-type: none;
+    padding: 1;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 1rem;   
+}
+
+.show-rows {
+    margin-inline: 4rem;   
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover, li a:focus {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+}
+
+li h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.show-img:hover {
+    filter: blur(3px);
+}
+
+.show-title {
+    color: rgba(240, 248, 255, 0);
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.show-title:hover {
+    color: rgb(240, 248, 255);
+}
+
+/* Initially hide the show-title1 element */
+.show-title1 {
+    display: none;
+}
+
+/* When hovering over the show-img, show the show-title1 element */
+.show-img:hover + .show-title1 {
+    display: block;
+}
+
